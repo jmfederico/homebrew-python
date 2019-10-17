@@ -37,8 +37,14 @@ cask 'python-3.7' do
 
   zap delete: "~/Library/Python/#{version.slice(%r{\d+\.\d+})}"
 
-  caveats 'You can run "ln -s /Library/Frameworks/Python.framework/Versions'\
-          "/#{version.slice(%r{\d+\.\d+})} ~/.pyenv/versions/"\
-          "#{version.slice(%r{\d+\.\d+})}\" to make Python #{version.slice(%r{\d+\.\d+})}"\
-          'available to pyenv.'
+  caveats do
+    pv = version.slice(%r{\d+\.\d+})
+    puts <<~EOS
+      To make Python #{pv} available to pyenv:
+        ln -s /Library/Frameworks/Python.framework/Versions/#{pv} ~/.pyenv/versions/#{pv}
+
+      If you use pyenv, do not add this formula bin directory to your PATH.
+    EOS
+    path_environment_variable "/Library/Frameworks/Python.framework/Versions/#{pv}/bin"
+  end
 end

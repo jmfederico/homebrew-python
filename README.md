@@ -37,7 +37,7 @@ $ brew cask zap <formula>
 ## Where do I find the Python binaries?
 `/Library/Frameworks/Python.framework/Versions/<version>/bin/`
 
-For **ZSH** users, you can add them to your `path`:
+For **ZSH** users, the following will add them all to your `PATH`:
 ```sh
 # ~/.zprofile
 path=(
@@ -46,11 +46,24 @@ path=(
 )
 ```
 
-## How to I invoke a specific version?
+### How to I invoke a specific version?
 ```console
 $ python3.7 --version
 Python 3.7.5
 
 $ python3.8 --version
 Python 3.8.0
+```
+
+## pyenv
+
+If you want to integrate [pyenv](https://github.com/pyenv/pyenv/) with these formulae,
+symlink them like this:
+```console
+$ ln -s /Library/Frameworks/Python.framework/Versions/* ~/.pyenv/versions/
+
+$ pyenv versions
+* system (set by /Users/user/.pyenv/version)
+  3.7
+  3.8
 ```
