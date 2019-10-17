@@ -27,12 +27,10 @@ $ brew cask zap <formula>
 ## What gets installed?
 - [x] Python Framework
 - [x] GUI Applications
-- [x] Python Documentation
-- [x] Install or upgrade pip
-
-### What is not installed?
 - [ ] UNIX command-line tools
+- [x] Python Documentation
 - [ ] Shell profile updater
+- [x] Install or upgrade pip
 
 ## Where do I find the Python binaries?
 `/Library/Frameworks/Python.framework/Versions/<version>/bin/`
@@ -67,3 +65,6 @@ $ pyenv versions
   3.7
   3.8
 ```
+
+In this case do not add `/Library/Frameworks/Python.framework/Versions/<version>/bin/`
+to your PATH.
