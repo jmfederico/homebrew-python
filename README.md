@@ -54,7 +54,7 @@ $ python3.8 --version
 Python 3.8.x
 
 $ python3.9 --version
-Python 3.8.x
+Python 3.9.x
 ```
 
 ## pyenv
