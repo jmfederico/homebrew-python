@@ -47,10 +47,13 @@ path=(
 ### How to I invoke a specific version?
 ```console
 $ python3.7 --version
-Python 3.7.5
+Python 3.7.x
 
 $ python3.8 --version
-Python 3.8.0
+Python 3.8.x
+
+$ python3.9 --version
+Python 3.8.x
 ```
 
 ## pyenv
@@ -64,6 +67,7 @@ $ pyenv versions
 * system (set by /Users/user/.pyenv/version)
   3.7
   3.8
+  3.9
 ```
 
 In this case do not add `/Library/Frameworks/Python.framework/Versions/<version>/bin/`
