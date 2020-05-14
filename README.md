@@ -5,6 +5,7 @@ Install latest official Python releases for macOS from
 
 ## Formulae
 
+- python-3.9
 - python-3.8
 - python-3.7
 
