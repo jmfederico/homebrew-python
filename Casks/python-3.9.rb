@@ -1,6 +1,6 @@
 cask 'python-3.9' do
-  version '3.9.0rc1'
-  sha256 'db69fcee04e367635d5356cb35e468817f4c0ad031dc7a2c1cb49ca43da6b45b'
+  version '3.9.0'
+  sha256 'dadee1d10c1a8ed58bb64ec7409a48c9fe38599791eaaea29303ee59fb95dfeb'
 
   url "https://www.python.org/ftp/python/#{version.slice(%r{\d+\.\d+\.\d+})}/python-#{version}-macosx10.9.pkg"
   name 'Python 3.9'
