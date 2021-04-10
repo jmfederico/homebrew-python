@@ -7,7 +7,7 @@ Install latest official Python releases for macOS from
 
 - python-3.9
 - python-3.8
-- python-3.7
+- python-3.7 (not updated after 3.7.9)
 
 ## How do I install these formulae?
 ```console
