@@ -1,3 +1,12 @@
+# DEPRECATED
+
+This tap is not being updated. Latest versions are available directly from 
+homebrew.
+
+```console
+$ brew install python@3.9 python@3.8 python@3.7
+```
+
 # Homebrew Python
 
 Install latest official Python releases for macOS from
